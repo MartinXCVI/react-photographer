@@ -1,0 +1,45 @@
+@use './includes/mixins' as mx;
+@use './includes/colors' as color;
+@use './includes/typography' as font;
+@use './includes/variables' as var;
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: color.$white;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  text-transform: capitalize;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+p {
+  // font-family: font.$textFont;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  text-wrap: pretty;
+  color: color.$lightBlack;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media all and (max-width: 575px) {
+
+  p {
+    font-size: 1rem;
+  }
+}
