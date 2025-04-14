@@ -12,6 +12,12 @@
 
 // For components
 
+@use './components/Home/bannerSlider.scss';
+@use './components/Home/aboutSection.scss';
+@use './components/Home/quoteSection.scss';
+@use './components/Home/homeGallerySlider.scss';
+@use './components/Home/homeContact.scss';
+
 /*----- Views -----*/
 
 // For views

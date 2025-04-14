@@ -1,4 +1,9 @@
 import Navbar from "../components/Navbar"
+import HeroBanner from "../components/Home/HeroBanner"
+import AboutSection from "../components/Home/AboutSection"
+import QuoteSection from "../components/Home/QuoteSection"
+import HomeGallerySlider from "../components/Home/HomeGallerySlider"
+import HomeContact from "../components/Home/HomeContact"
 import Footer from "../components/Footer"
 
 
@@ -6,9 +11,11 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="min-h-96 flex justify-center items-center">
-        This is the Home page
-      </div>
+      <HeroBanner />
+      <AboutSection />
+      <QuoteSection />
+      <HomeGallerySlider />
+      <HomeContact />
       <Footer />
     </>
   )

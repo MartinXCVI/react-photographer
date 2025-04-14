@@ -3,18 +3,12 @@
 @use './includes/typography' as font;
 @use './includes/variables' as var;
 
-
+* {
+  box-sizing: border-box;
+}
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  background-color: color.$white;
-}
-
-a {
-  text-decoration: none;
 }
 
 h1, h2, h3 {
@@ -28,9 +22,8 @@ h1, h2, h3, h4, h5, h6 {
 p {
   // font-family: font.$textFont;
   margin-bottom: 0.75rem;
-  font-size: 1.1rem;
   text-wrap: pretty;
-  color: color.$lightBlack;
+  // color: color.$lightBlack;
 }
 
 button {
