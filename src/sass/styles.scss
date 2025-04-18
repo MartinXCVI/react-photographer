@@ -10,13 +10,15 @@
 /*----- Components -----*/
 @use './components/navbar.scss';
 
-// For components
-
+// Home components
 @use './components/Home/bannerSlider.scss';
 @use './components/Home/aboutSection.scss';
 @use './components/Home/quoteSection.scss';
 @use './components/Home/homeGallerySlider.scss';
 @use './components/Home/homeContact.scss';
+
+// Gallery components
+@use './components/Gallery/gallerySlider.scss';
 
 /*----- Views -----*/
 

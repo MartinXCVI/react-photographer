@@ -11,7 +11,10 @@ const HomeGalleryImages: FunctionComponent<IGalleryImages> = (props): JSX.Elemen
   }
 
   return (
-    <section className="home-gallery-images-wrapper px-5 py-10">
+    <section
+      className="home-gallery-images-wrapper px-5 py-10"
+      aria-label="Home's gallery of images"
+    >
       {data.map((slide, index)=> (
         <figure
           onClick={()=> handleClickImage(index)}
