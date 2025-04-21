@@ -2,7 +2,7 @@ import routes from "../routes/routes"
 import { JSX } from "react"
 
 
-const { home, about, gallery, contact } = routes
+const { home, about, gallery, services, contact } = routes
 
 const Navbar = (): JSX.Element => {
 
@@ -26,11 +26,7 @@ const Navbar = (): JSX.Element => {
               <a href={gallery}>Gallery</a>
             </li>
             <li>
-              <a>Services</a>
-              <ul className="p-2">
-                <li><a>Service 1</a></li>
-                <li><a>Service 2</a></li>
-              </ul>
+              <a href={services}>Services</a>
             </li>
             <li>
               <a href={contact}>Contact</a>
@@ -54,13 +50,7 @@ const Navbar = (): JSX.Element => {
             <a href={gallery}>Gallery</a>
           </li>
           <li>
-            <details>
-              <summary>Services</summary>
-              <ul className="p-2">
-                <li><a>Service 1</a></li>
-                <li><a>Service 2</a></li>
-              </ul>
-            </details>
+            <a href={services}>Services</a>
           </li>
           <li>
             <a href={contact}>Contact</a>

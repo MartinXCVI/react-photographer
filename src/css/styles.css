@@ -21,6 +21,10 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
+.text-shadow {
+  text-shadow: 0rem 0rem 0.25rem #151515;
+}
+
 p {
   margin-bottom: 0.75rem;
   text-wrap: pretty;
@@ -294,6 +298,48 @@ button {
     -moz-column-count: 2;
     column-count: 2;
   }
+}
+.services-hero {
+  min-height: 90vh;
+  position: relative;
+}
+.services-hero::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -5;
+  background-image: url("/images/services-hero.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  background-attachment: fixed;
+}
+
+#service-contact-section {
+  position: relative;
+}
+#service-contact-section::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -3;
+  background: #151515;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+}
+#service-contact-section::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -5;
+  background-image: url("/images/services-contact.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
 }
 
 /*# sourceMappingURL=styles.css.map */

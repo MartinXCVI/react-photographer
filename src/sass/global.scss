@@ -19,6 +19,10 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
+.text-shadow {
+  text-shadow: 0rem 0rem 0.25rem color.$black;
+}
+
 p {
   // font-family: font.$textFont;
   margin-bottom: 0.75rem;
