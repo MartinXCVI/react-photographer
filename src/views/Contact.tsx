@@ -1,13 +1,18 @@
 import Navbar from "../components/Navbar"
+import ContactForm from "../components/Contact/ContactForm"
+import ContactInfo from "../components/Contact/ContactInfo"
 import Footer from "../components/Footer"
 
+
 const Contact = () => {
+
   return (
     <>
       <Navbar />
-      <div className="min-h-96 flex justify-center items-center">
-        This is the Contact page
-      </div>
+      <main id="main-contact" className="flex flex-col justify-center items-center p-2">
+        <ContactForm />
+        <ContactInfo />
+      </main>
       <Footer />
     </>
   )

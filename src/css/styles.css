@@ -342,4 +342,103 @@ button {
   opacity: 0.9;
 }
 
+#main-contact {
+  position: relative;
+}
+#main-contact::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -3;
+  background: #151515;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+}
+#main-contact::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -5;
+  background-image: url("/images/contact-bg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  background-attachment: fixed;
+}
+
+#contact-form {
+  border-radius: 0.5rem;
+  position: relative;
+}
+#contact-form::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -3;
+  background: #151515;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  border-radius: 0.5rem;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.form-div label {
+  width: 100%;
+}
+.form-div label span {
+  font-size: 1.25rem !important;
+}
+.form-div label input {
+  width: 100%;
+}
+.form-div .textarea-label {
+  width: 100%;
+}
+
+.form-div.textarea-div {
+  width: 100%;
+}
+
+.floating-label > span {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.form-buttons-section button {
+  width: 7.5rem;
+}
+
+#contact-info-section {
+  border-radius: 0.5rem;
+  position: relative;
+}
+#contact-info-section::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -3;
+  background: #151515;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .form-buttons-section button {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

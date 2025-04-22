@@ -1,5 +1,9 @@
 export interface IMyInfo {
-  twitter: string;
+  email: string;
+  phone: string;
+  address: string;
+  xtwitter: string;
+  xtwitterUser: string;
   youtube: string;
   facebook: string;
 }
