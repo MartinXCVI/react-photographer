@@ -1,6 +1,6 @@
 import { IRoutes } from "../interfaces/IRoutes"
 
-const baseUrl: string = import.meta.env.VITE_BASE_PAGES || '/'
+const baseUrl: string = import.meta.env.VITE_BASE_PAGES || '/src/html/'
 
 const routes: IRoutes = {
   home: `${baseUrl}index.html`,

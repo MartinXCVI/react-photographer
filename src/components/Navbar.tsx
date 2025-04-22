@@ -1,9 +1,11 @@
 import routes from "../routes/routes"
+import { myInfo } from "../data/myInfo";
 import { JSX } from "react"
 import { FaWhatsapp } from "react-icons/fa";
 
 
 const { home, gallery, services, contact } = routes
+const { whatsapp } = myInfo
 
 const Navbar = (): JSX.Element => {
 
@@ -55,7 +57,7 @@ const Navbar = (): JSX.Element => {
       <div className="navbar-end">
         <a
           className="btn btn-success text-xl text-white"
-          href="https://wa.me/3815513673"
+          href={`https://wa.me/${whatsapp}`}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Contact via WhatsApp"
