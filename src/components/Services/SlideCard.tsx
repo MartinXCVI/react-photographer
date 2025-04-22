@@ -49,7 +49,7 @@ const SlideCard: FunctionComponent<SlideCardProps> = ({ slidesArray, service, de
         <a
           href={contact}
           role="button"
-          className="btn btn-outline text-shadow"
+          className="btn btn-outline dark:text-shadow hover-shadowless"
           title="Click to do a consultation for this service"
           aria-label="Click to do a consultation for this service"
         >

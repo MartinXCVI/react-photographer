@@ -52,12 +52,12 @@ const BannerSlider: FunctionComponent<BannerSliderProps> = ({ slides }): JSX.Ele
                 className="slide-image" 
                 style={{ backgroundImage: `url(${slide.image})` }}
               >
-              <img
-                className='slide-image'
-                alt={`${slide.title} - ${slide.subtitle}`}
-                loading="lazy"
-                src={slide.image}
-              />
+                <img
+                  className='slide-image object-cover'
+                  alt={`${slide.title} - ${slide.subtitle}`}
+                  loading="lazy"
+                  src={slide.image}
+                />
               </div>
               {(slide.title || slide.subtitle) && (
                 <div className="slide-text">

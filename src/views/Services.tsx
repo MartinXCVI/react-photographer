@@ -6,12 +6,47 @@ import FAQ from "../components/Services/FAQ"
 import ServicesContact from "../components/Services/ServicesContact"
 import Footer from "../components/Footer"
 
+import { useEffect } from "react"
+
 import { MdEventAvailable } from "react-icons/md";
 import { GiClothes } from "react-icons/gi";
 import { RiLandscapeAiLine } from "react-icons/ri";
 import { ImCool } from "react-icons/im";
 
 const Services = () => {
+
+  useEffect(() => {
+    // Handle scrolling to hash on page load
+    const handleScroll = () => {
+      if (window.location.hash) {
+        // Get the element id from the hash
+        const id = window.location.hash.substring(1);
+        const element = document.getElementById(id);
+        
+        if (element) {
+          // Give React a moment to finish rendering
+          setTimeout(() => {
+            // Get header height if you have a fixed header
+            const headerHeight = document.querySelector('header')?.offsetHeight || 0;
+            
+            // Scroll to element with offset for header
+            window.scrollTo({
+              top: element.offsetTop - headerHeight - 20, // Extra 20px padding
+              behavior: 'smooth'
+            });
+          }, 300); // Slightly longer timeout to ensure everything is rendered
+        }
+      }
+    };
+    
+    // Run once when component mounts
+    handleScroll();
+    
+    // Also handle if the hash changes while on the page
+    window.addEventListener('hashchange', handleScroll);
+    return () => window.removeEventListener('hashchange', handleScroll);
+  }, []);
+
   return (
     <>
       <Navbar />

@@ -16,6 +16,7 @@ h1, h2, h3 {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: font.$titleFont;
   text-wrap: balance;
 }
 
@@ -23,11 +24,20 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 0rem 0rem 0.25rem color.$black;
 }
 
+.hover-shadowless {
+  &:hover {
+    text-shadow: 0rem 0rem 0rem;
+  }
+}
+
 p {
-  // font-family: font.$textFont;
+  font-family: font.$textFont;
   margin-bottom: 0.75rem;
   text-wrap: pretty;
-  // color: color.$lightBlack;
+}
+
+a {
+  font-family: font.$textFont;
 }
 
 button {

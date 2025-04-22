@@ -1,8 +1,9 @@
 import routes from "../routes/routes"
 import { JSX } from "react"
+import { FaWhatsapp } from "react-icons/fa";
 
 
-const { home, about, gallery, services, contact } = routes
+const { home, gallery, services, contact } = routes
 
 const Navbar = (): JSX.Element => {
 
@@ -18,9 +19,6 @@ const Navbar = (): JSX.Element => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
             <li>
               <a href={home}>Home</a>
-            </li>
-            <li>
-              <a href={about}>About</a>
             </li>
             <li>
               <a href={gallery}>Gallery</a>
@@ -44,9 +42,6 @@ const Navbar = (): JSX.Element => {
             <a href={home}>Home</a>
           </li>
           <li>
-            <a href={about}>About</a>
-          </li>
-          <li>
             <a href={gallery}>Gallery</a>
           </li>
           <li>
@@ -58,7 +53,16 @@ const Navbar = (): JSX.Element => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <a
+          className="btn btn-success text-xl text-white"
+          href="https://wa.me/3815513673"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Contact via WhatsApp"
+          title="Contact via WhatsApp"
+        >
+          <FaWhatsapp />
+        </a>
       </div>
     </nav>
   )

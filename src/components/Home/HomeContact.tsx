@@ -13,18 +13,26 @@ const HomeContact = (): JSX.Element => {
     >
       <div className="hero-content text-center">
         <div className="max-w-md">
-          <h2 id="home-contact-title" className="text-5xl font-bold">
+          <h2 id="home-contact-title" className="text-5xl font-bold text-white">
             Let's Connect
           </h2>
-          <p className="home-contact-text py-6 text-xl">
+          <p className="home-contact-text py-6 text-xl text-white">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
             quasi. In deleniti eaque aut repudiandae et a id nisi.
           </p>
           <div className="flex justify-center items-center gap-3" aria-label="Contact buttons section">
-            <a className="btn btn-outline" href={contact} title="Go to Contact page">
+            <a
+              className="btn btn-outline dark:text-white dark:hover:text-white text-white hover:text-black"
+              href={contact}
+              title="Go to Contact page"
+            >
               Contact Me
             </a>
-            <a className="btn btn-outline" href={gallery} title="Go to Gallery page">
+            <a
+              className="btn btn-outline dark:text-white dark:hover:text-white text-white hover:text-black"
+              href={gallery}
+              title="Go to Gallery page"
+            >
               See Works
             </a>
           </div>

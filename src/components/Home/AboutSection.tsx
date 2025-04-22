@@ -37,7 +37,7 @@ const AboutSection = (): JSX.Element => {
           Right now, I love the thrill at the start of something new. I love strange ideas, bold flavors, the perfect playlist, and watching the wild shift with every change in light.
         </p>
         <p>
-          If you're curious about my conservation work or how I support those causes, <a className="text-blue-600 link" href={contact}>feel free to reach out</a>.
+          If you're curious about my conservation work or how I support those causes, <a className="text-primary link" href={contact}>feel free to reach out</a>.
         </p>
       </article>
     </section>

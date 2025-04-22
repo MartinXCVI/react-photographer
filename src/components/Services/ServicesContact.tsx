@@ -11,17 +11,17 @@ const ServicesContact = (): JSX.Element => {
       id="service-contact-section"
       aria-label="Service's page's contact section"
     >
-      <h2 className="text-3xl text-center text-shadow">
+      <h2 className="text-3xl text-center text-white text-shadow">
         Schedule A Photos Session
       </h2>
-      <p className="w-10/12 text-xl text-center text-shadow">
+      <p className="w-10/12 text-xl text-center text-white text-shadow">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat autem laudantium nemo! Labore accusamus eum consequuntur suscipit. Assumenda, illum nostrum.
       </p>
       <div className="w-full flex justify-center items-center gap-3">
         <a
           href={contact}
           role="button"
-          className="btn btn-outline text-shadow"
+          className="btn btn-outline text-white hover:text-black dark:hover:text-white text-shadow hover-shadowless"
           title="Click to schedule a photography session"
           aria-label="Click to schedule a photography session"
         >
@@ -30,7 +30,7 @@ const ServicesContact = (): JSX.Element => {
         <a
           href={gallery}
           role="button"
-          className="btn btn-outline text-shadow"
+          className="btn btn-outline text-white hover:text-black dark:hover:text-white text-shadow hover-shadowless"
           title="Click to see my portfolio of works"
           aria-label="Click to see my portfolio of works"
         >

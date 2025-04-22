@@ -19,9 +19,11 @@ const ContactForm = (): JSX.Element => {
       className="w-full min-h-screen flex flex-col justify-center items-center mb-5"
       aria-label="Contact form section"
     >
-      <form id="contact-form" className="w-11/12 md:w-10/12 border border-base-300 p-2 md:p-5">
-        <fieldset className="w-full grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-5 border-base-100 rounded-box border p-4 mb-4">
-          <legend className="fieldset-legend text-2xl px-2 mb-4 col-span-full">Contact Me</legend>
+      <form id="contact-form" className="w-11/12 md:w-10/12 p-2 md:p-5">
+        <fieldset className="w-full grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-5 border-base-300 rounded-box border p-4 mb-4">
+          <legend className="fieldset-legend text-2xl px-2 mb-4 col-span-full text-white">
+            Contact Me
+          </legend>
           {/* Fullname */}
           <div className="form-div">
             <label className="floating-label">

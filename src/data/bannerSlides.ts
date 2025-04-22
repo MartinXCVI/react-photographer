@@ -7,7 +7,7 @@ export const bannerSlides = [
   },
   {
     id: 2,
-    image: '/images/home-slider/sea.jpg',
+    image: '/images/home-slider/portrait.jpg',
     title: 'Authentic Portraits',
     subtitle: 'The essence of personality in every frame'
   },
@@ -29,4 +29,10 @@ export const bannerSlides = [
     title: 'Fresh Paradise',
     subtitle: 'Captivating places and their mysteries'
   },
+  {
+    id: 6,
+    image: '/images/home-slider/sea.jpg',
+    title: "Sunset Calmness",
+    subtitle: "A view that captivates the soul"
+  }
 ];

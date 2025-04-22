@@ -1,3 +1,5 @@
+@use '../../includes/variables' as var;
+
 .home-gallery-images-wrapper {
   max-width: 1200px;
   margin: 2rem auto;
@@ -9,11 +11,17 @@
 .home-gallery-fig {
   width: 100%;
   height: 20rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
   cursor: pointer;
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 0.5rem;
+    transition: var.$trs05;
+    &:hover {
+      scale: (1.1);
+    }
   }
 }

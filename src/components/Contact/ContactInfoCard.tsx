@@ -9,8 +9,8 @@ const ContactInfoCard: FunctionComponent<ContactInfoCardProps> = ({ icon, data }
 
   return (
     <div className="w-full sm:w-2/12 md:w-3/12 flex flex-col justify-center items-center gap-5">
-      <div className="text-2xl">{icon}</div>
-      <p className="text-center">{data}</p>
+      <div className="text-2xl text-white">{icon}</div>
+      <p className="text-center text-white">{data}</p>
     </div>
   )
 }

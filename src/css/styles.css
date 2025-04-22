@@ -1,10 +1,7 @@
 /*----- Global -----*/
-/*----- Views -----*/
 /*----- Fonts & Icons -----*/
-@import url("https://fonts.googleapis.com/css2?family=Kurale&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
 * {
   box-sizing: border-box;
 }
@@ -18,6 +15,7 @@ h1, h2, h3 {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
   text-wrap: balance;
 }
 
@@ -25,9 +23,18 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 0rem 0rem 0.25rem #151515;
 }
 
+.hover-shadowless:hover {
+  text-shadow: 0rem 0rem 0rem;
+}
+
 p {
+  font-family: "Poppins", sans-serif;
   margin-bottom: 0.75rem;
   text-wrap: pretty;
+}
+
+a {
+  font-family: "Poppins", sans-serif;
 }
 
 button {
@@ -215,6 +222,8 @@ button {
 .home-gallery-fig {
   width: 100%;
   height: 20rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
   cursor: pointer;
 }
 .home-gallery-fig img {
@@ -222,6 +231,10 @@ button {
   height: 100%;
   object-fit: cover;
   border-radius: 0.5rem;
+  transition: 0.5s linear all;
+}
+.home-gallery-fig img:hover {
+  scale: 1.1;
 }
 
 #home-contact-section {
@@ -439,6 +452,29 @@ button {
   .form-buttons-section button {
     width: 100%;
   }
+}
+/*----- Views -----*/
+#gallery-contact-section {
+  position: relative;
+}
+#gallery-contact-section::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -3;
+  background: #151515;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+}
+#gallery-contact-section .gallery-contact-video {
+  position: absolute;
+  z-index: -5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
