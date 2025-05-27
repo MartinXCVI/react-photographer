@@ -16,7 +16,7 @@ const AboutSection = (): JSX.Element => {
       >
         <img
           className="w-full rounded-2xl"
-          src="/images/profile.jpg"
+          src="/images/profile.webp"
           alt="Photographer profile picture"
           title="Photographer profile picture"
         />

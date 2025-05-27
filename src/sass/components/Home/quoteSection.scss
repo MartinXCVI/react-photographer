@@ -7,7 +7,7 @@
     @include mx.bgColor(-3, color.$black, 0.2);
   }
   &::after {
-    @include mx.bgHeroImg(-5, '/images/home/quote-section.jpg', 0.9);
+    @include mx.bgHeroImg(-5, '/images/home/quote-section.webp', 0.9);
     background-attachment: fixed;
   }
 }

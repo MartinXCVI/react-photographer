@@ -50,8 +50,8 @@ button {
 /*----- Components -----*/
 .banner-slider-container {
   width: 100%;
-  height: 100vh;
-  min-height: 100vh;
+  height: 90vh;
+  min-height: 90vh;
   overflow: hidden;
   position: relative;
 }
@@ -199,7 +199,7 @@ button {
   inset: 0;
   position: absolute;
   z-index: -5;
-  background-image: url("/images/home/quote-section.jpg");
+  background-image: url("/images/home/quote-section.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

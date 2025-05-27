@@ -18,18 +18,19 @@ const Navbar = (): JSX.Element => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-            <li>
-              <a href={home}>Home</a>
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-64 p-2 shadow"
+          >
+            <li className="py-2">
+              <a className="text-lg" href={home}>Home</a>
             </li>
-            <li>
-              <a href={gallery}>Gallery</a>
+            <li className="py-2">
+              <a className="text-lg" href={gallery}>Gallery</a>
             </li>
-            <li>
-              <a href={services}>Services</a>
+            <li className="py-2">
+              <a className="text-lg" href={services}>Services</a>
             </li>
-            <li>
-              <a href={contact}>Contact</a>
+            <li className="py-2">
+              <a className="text-lg" href={contact}>Contact</a>
             </li>
           </ul>
         </div>
