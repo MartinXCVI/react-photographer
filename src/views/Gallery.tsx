@@ -1,3 +1,9 @@
+import { useEffect, JSX } from "react"
+
+// AOS library imports
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import routes from "../routes/routes"
 const { contact } = routes
 
@@ -9,12 +15,19 @@ import Footer from "../components/Footer"
 
 import GalleryContactVideo from '/videos/gallery/gallery-contact-video.mp4'
 
-const Gallery = () => {
+const Gallery = (): JSX.Element => {
+
+  useEffect((): void => {
+      AOS.init()
+    }, [])
+
   return (
     <>
       <Navbar />
       <main>
-        <h1 className="text-center text-5xl py-5">Natural Wonders</h1>
+        <h1 className="text-center text-5xl py-5" data-aos="fade-up" data-aos-duration="1500">
+          Natural Wonders
+        </h1>
         <AccordionImages />
         <GallerySlider />
         <section
@@ -30,7 +43,11 @@ const Gallery = () => {
             loop
             aria-label="Background video"
           ></video>
-          <p className="text-white text-2xl text-center md:leading-9 px-10 text-shadow">
+          <p
+            className="text-white text-2xl text-center md:leading-9 px-10 text-shadow"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+          >
             My photographic journey captures and celebrates what I appreciate in life - the simple, extraordinary magic of minor life moments forever frozen within each image.
           </p>
           <a

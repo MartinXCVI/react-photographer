@@ -13,7 +13,7 @@ const GallerySlider = (): JSX.Element => {
 
   return (
     <>
-      <h2 className="text-4xl text-center pt-10">
+      <h2 className="text-4xl text-center pt-10" data-aos="fade-up" data-aos-duration="1500">
         Eternal Memories
       </h2>
       <GalleryImages

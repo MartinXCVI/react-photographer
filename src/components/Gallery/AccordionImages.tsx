@@ -28,7 +28,11 @@ const GalleryImages = (): JSX.Element => {
     >
       {/* Blurred background div */}
       <div className="inset-0 absolute bg-[rgba(0, 0, 0, 0.3)] z-0 backdrop-blur-md" aria-hidden="true"></div>
-      <div className="w-[1280px] h-[80vh] flex flex-col sm:flex-row items-center justify-center px-5 gap-2 z-10">
+      <div
+        className="w-[1280px] h-[80vh] flex flex-col sm:flex-row items-center justify-center px-5 gap-2 z-10"
+        data-aos="fade-left"
+        data-aos-duration="2250"
+      >
         {galleryAccordionImages.map((galleryImage: IAccordionImages, index: number)=> (
           <figure
             key={index}

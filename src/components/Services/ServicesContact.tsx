@@ -11,10 +11,18 @@ const ServicesContact = (): JSX.Element => {
       id="service-contact-section"
       aria-label="Service's page's contact section"
     >
-      <h2 className="text-3xl text-center text-white text-shadow">
+      <h2
+        className="text-3xl text-center text-white text-shadow"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+      >
         Schedule A Photos Session
       </h2>
-      <p className="w-10/12 text-xl text-center text-white text-shadow">
+      <p
+        className="w-10/12 text-xl text-center text-white text-shadow"
+        data-aos="fade-left"
+        data-aos-duration="1500"
+      >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat autem laudantium nemo! Labore accusamus eum consequuntur suscipit. Assumenda, illum nostrum.
       </p>
       <div className="w-full flex justify-center items-center gap-3">

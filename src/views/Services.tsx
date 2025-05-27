@@ -1,3 +1,9 @@
+import { useEffect, JSX } from "react"
+
+// AOS library imports
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import Navbar from "../components/Navbar"
 import HeroServices from "../components/Services/HeroServices"
 import SlideServicesCards from "../components/Services/SlideServicesCards"
@@ -6,14 +12,12 @@ import FAQ from "../components/Services/FAQ"
 import ServicesContact from "../components/Services/ServicesContact"
 import Footer from "../components/Footer"
 
-import { useEffect } from "react"
-
 import { MdEventAvailable } from "react-icons/md";
 import { GiClothes } from "react-icons/gi";
 import { RiLandscapeAiLine } from "react-icons/ri";
 import { ImCool } from "react-icons/im";
 
-const Services = () => {
+const Services = (): JSX.Element => {
 
   useEffect(() => {
     // Handle scrolling to hash on page load
@@ -47,12 +51,22 @@ const Services = () => {
     return () => window.removeEventListener('hashchange', handleScroll);
   }, []);
 
+  useEffect((): void => {
+    AOS.init()
+  }, [])
+
   return (
     <>
       <Navbar />
       <HeroServices />
-      <main id="main-services">
-        <h1 className="text-center text-5xl pt-10 pb-5">Main Services I Offer</h1>
+      <main id="main-services" className="overflow-hidden">
+        <h1
+          className="text-center text-5xl pt-10 pb-5"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+        >
+          Main Services I Offer
+        </h1>
         <SlideServicesCards />
         <section id="additional-services">
           <AdditionalService

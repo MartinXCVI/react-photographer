@@ -13,10 +13,19 @@ const HomeContact = (): JSX.Element => {
     >
       <div className="hero-content text-center">
         <div className="max-w-md">
-          <h2 id="home-contact-title" className="text-5xl font-bold text-white">
+          <h2
+            id="home-contact-title"
+            className="text-5xl font-bold text-white"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             Let's Connect
           </h2>
-          <p className="home-contact-text py-6 text-xl text-white">
+          <p
+            className="home-contact-text py-6 text-xl text-white"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
             quasi. In deleniti eaque aut repudiandae et a id nisi.
           </p>

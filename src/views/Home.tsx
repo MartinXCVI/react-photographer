@@ -1,3 +1,9 @@
+import { useEffect, JSX } from "react"
+
+// AOS library imports
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import Navbar from "../components/Navbar"
 import HeroBanner from "../components/Home/HeroBanner"
 import AboutSection from "../components/Home/AboutSection"
@@ -7,7 +13,12 @@ import HomeContact from "../components/Home/HomeContact"
 import Footer from "../components/Footer"
 
 
-const Home = () => {
+const Home = (): JSX.Element => {
+
+  useEffect((): void => {
+    AOS.init()
+  }, [])
+
   return (
     <>
       <Navbar />

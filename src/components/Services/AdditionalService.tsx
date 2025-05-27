@@ -8,10 +8,14 @@ const AdditionalServices: FunctionComponent<IAdditionalService> = ({ id, name, i
 
   return (
     <article
-      className={`additional-service flex flex-col justify-center ${reversed ? "md:flex-row-reverse" : "md:flex-row"}`}
+      className={`additional-service flex flex-col justify-center ${reversed ? "md:flex-row-reverse" : "md:flex-row"} overflow-hidden`}
       id={id}
     >
-      <figure className="w-full md:w-[50%]">
+      <figure
+        className="w-full md:w-[50%]"
+        data-aos={`${reversed ? "flip-left" : "flip-right"}`}
+        data-aos-duration="1500"
+      >
         <img 
           className="w-full"
           src={img}
@@ -19,7 +23,11 @@ const AdditionalServices: FunctionComponent<IAdditionalService> = ({ id, name, i
           title={alt}
         />
       </figure>
-      <article className="additional-service-info w-full flex flex-col md:w-[50%] p-5 gap-3">
+      <article
+        className="additional-service-info w-full flex flex-col md:w-[50%] p-5 gap-3"
+        data-aos={`${reversed ? "fade-right" : "fade-left"}`}
+        data-aos-duration="1500"
+      >
         <h2 className="card-title text-3xl mt-3">{name}</h2>
         <div className="divider mt-0"></div>
         {children}

@@ -18,7 +18,11 @@ const { contact } = routes
 
 const SlideCard: FunctionComponent<SlideCardProps> = ({ slidesArray, service, description }) => {
   return (
-    <section className="w-[90%] sm:w-[100%] max-w-md">
+    <section
+      className="w-[90%] sm:w-[100%] max-w-md"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
       <Swiper
         effect={'cards'}
         grabCursor={true}
