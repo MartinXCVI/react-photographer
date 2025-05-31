@@ -7,7 +7,7 @@ const QuoteSection = (): JSX.Element => {
 
   return (
     <section
-      className="w-full min-h-screen px-5 flex flex-col justify-center items-center"
+      className="w-full min-h-screen px-5 flex flex-col justify-center items-center over-hidden"
       id="home-quote-section"
       aria-label="Inspiring quote intermediate section"
     >

@@ -8,7 +8,7 @@ const HomeContact = (): JSX.Element => {
   return (
     <section
       id="home-contact-section"
-      className="w-full min-h-screen hero"
+      className="w-full min-h-screen hero over-hidden"
       aria-labelledby="home-contact-title"
     >
       <div className="hero-content text-center">

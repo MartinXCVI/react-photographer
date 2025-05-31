@@ -47,6 +47,26 @@ button {
   }
 }
 /*----- Includes -----*/
+.capital {
+  text-transform: capitalize;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.over-x {
+  overflow-x: hidden;
+}
+
+.over-y {
+  overflow-y: hidden;
+}
+
+.over-hidden {
+  overflow: hidden;
+}
+
 /*----- Components -----*/
 .banner-slider-container {
   width: 100%;

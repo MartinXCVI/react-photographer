@@ -6,7 +6,7 @@ const { contact } = routes
 const AboutSection = (): JSX.Element => {
   return (
     <section
-      className="w-full min-h-screen flex flex-col md:flex-row justify-center items-center gap-5 px-5 py-10 overflow-hidden"
+      className="w-full min-h-screen flex flex-col md:flex-row justify-center items-center gap-5 px-5 py-10 over-hidden"
       aria-label="About the photographer section"
     >
       <figure
